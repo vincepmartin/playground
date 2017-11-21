@@ -35,7 +35,7 @@ var isSymmetric = function(root) {
  */
 let printTree = function(rootNode) {
     console.log(rootNode); 
-    if(rootNode.val !== null) {
+    if(rootNode !== null) {
         printTree(rootNode.left); 
         console.log(`${rootNode.val} `);
         printTree(rootNode.right);
@@ -62,5 +62,5 @@ let generateTree = function(treeArray, rootNode, i) {
 tree = new TreeNode();
 values = [1, 2, 3, 4, 5, 6, 7];
 tree = generateTree(values, tree, 0);
-console.log(tree);
+// console.log(tree);
 printTree(tree);
