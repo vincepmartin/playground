@@ -61,16 +61,17 @@ let generateTree = function(treeArray, rootNode, i) {
 }
 
 // Test driver code.
-/* 
 let non_symetric_tree = new TreeNode();
 non_symetric_tree = generateTree([1, 2, 3, 4, 5, 6, 7], non_symetric_tree, 0);
+console.log(non_symetric_tree);
 
+/*
 let symetric_tree = new TreeNode();
 symetric_tree = generateTree([1,2,2,3,4,4,3], symetric_tree, 0);
-*/
 
 let non_symetric_tree_2 = new TreeNode();
 non_symetric_tree_2 = generateTree([1,2,2,null,3,null,3], non_symetric_tree_2, 0);
 
 console.log(non_symetric_tree_2);
 console.log(`\n\n\tThe above tree is symetric: ${isSymmetric(non_symetric_tree_2)}.`);
+*/
