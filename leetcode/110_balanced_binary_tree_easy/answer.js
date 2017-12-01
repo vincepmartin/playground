@@ -27,39 +27,39 @@ function TreeNode(val) {
 let getDepthRecursive = function(root) {
     // Base case.
     if(root === null)
-        return {left: -1, right: -1}
+        return 0 
 
-    // Calculate the left and right depth.
-    let depth = {
-        left: (getDepthRecursive(root.left) === null ? 0 : getDepthRecursive(root.left).left) + 1,
-        right: (getDepthRecursive(root.right) === null ? 0 : getDepthRecursive(root.right).right) + 1
-    };
+    let left = getDepthRecursive(root.left)
+    let right = getDepthRecursive(root.right)
 
-    return depth;
+    console.log(`left: ${left} right: ${right}`)
+
+    if (left === -1 || right === -1)
+        return -1
+   
+    if (Math.abs(left - right) > 1)
+        return -1 
+    
+    return (Math.max(left, right) + 1)
 }
 
 let isBalanced = function(tree) {
-    let depth = getDepthRecursive(tree);
-    console.log(`L: ${depth.left} R: ${depth.right}`);
-
-    if(Math.abs(depth.left - depth.right) >= 1) {
-        return false;
-    }
-
-    else {
-        return true;
-    }
+    return getDepthRecursive(tree)
 } 
 
 // Test driver code...
-// let root = new TreeNode();
-let root;
-let rootfalse;
 
-root = generateTree([1, 2], root, 0); 
-rootfalse = generateTree([1,null,2,null,3], rootfalse, 0);
-console.log(root);
-console.log(`Balanced: ${isBalanced(root)}`);
-console.log(`******`);
-console.log(rootfalse);
-console.log(`Balanced: ${isBalanced(rootfalse)}`);
+// Define test cases.
+let root;
+let testCases = [[1, null, 3, 2], [1, 2], [1, null, 2, null, 3]]
+// false, true, false
+
+
+console.log(generateTree([1,null,3,2], root, 0))
+// Run the test cases.
+/*
+testCases.forEach( i => {
+    console.log(`*****`)
+    console.log(`Testing: ` + i.toString() + `Balanced: ` + isBalanced(generateTree(i, root, 0)))
+})
+*/
