@@ -9,37 +9,32 @@
  * @param {node} recursive 
  */
 let getDepth = function(node) {
+    // Base case returns 0. 
     if(node == null)
-        // return {left: 0, right: 0};
-        return null 
+        return 0;
 
-    let depth = {
-        /*
-        left: getDepth(node.left).left + 1,
-        right: getDepth(node.right).right + 1
-        */
-
-        left: (getDepth(node.left) === null) ? 0 : getDepth(node.left).left + 1,
-        right: (getDepth(node.right) === null) ? 0 : getDepth(node.right).right + 1
-    }
-
-    return depth
+    // Return the maximum height of either left or right.
+    return 1 + Math.max(getDepth(node.left), getDepth(node.right))
 }
 
 /**
  * Test depth.
  */
 let isBalanced = function(node) {
-    let depth = getDepth(node)
-    console.log(`Depth is: ${depth.left} by ${depth.right}`) 
-    if(Math.abs(depth.left - depth.right) > 1) {
-        console.log('unbalanced')
-        return false 
-    }
-    else {
-        console.log('balanced')
+    // Error checking for an empty set.
+    if(node === null || node === [])
         return true 
-    }
+    
+    // Check the height of both sides and then compare them.
+    let lh = getDepth(node.left)
+    let rh = getDepth(node.right) 
+    
+    console.log(`Height (l,r): (${lh}, ${rh})`)
+
+    if(Math.abs(lh-rh) > 1)
+        return false;
+    else
+        return true
 }
 
 // Test
@@ -65,8 +60,14 @@ test4.left = null
 test4.right = new TreeNode(3)
 test4.right.left = new TreeNode(2)
 
-console.log(test1)
-isBalanced(test1)
+let tests = new Array;
+// tests.push(test1)
+// tests.push(test2)
+// tests.push(test3)
+tests.push(test4)
 
-console.log(test4)
-isBalanced(test4)
+// console.log(test1)
+tests.forEach( t => {
+    console.log(`***** Testing ${t}`)
+    console.log(isBalanced(t))
+})
