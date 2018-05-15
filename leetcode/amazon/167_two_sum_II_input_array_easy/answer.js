@@ -15,13 +15,12 @@ var twoSum = function(numbers, target) {
         answers.push(i + 1)
         answers.push(j + 1)
         break Inner
-      }
+      } else if(x + y > target)
+        break Inner
     }
   }
   return answers
 };
 
 // Test.
-console.log(twoSum([2, 7, 11, 15], 9))
-
 console.log(twoSum([2, 3, 4], 6))
