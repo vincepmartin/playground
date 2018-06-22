@@ -1,7 +1,8 @@
 package net.finalatomicbuster.ctci;
 
-import net.finalatomicbuster.ctci.datastructures.ListNode;
+import net.finalatomicbuster.ctci.datastructures.TreeNode;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Main {
@@ -27,11 +28,47 @@ public class Main {
                 lp.run();
                 break;
 
+            case "zigzag":
+                ZigZag z = new ZigZag();
+
+                TreeNode test = new TreeNode(1);
+                test.left = new TreeNode(2);
+                test.left.left = new TreeNode(4);
+                test.left.right = new TreeNode(5);
+                test.right = new TreeNode(3);
+                test.right.right = new TreeNode(6);
+
+                z.zigzagLevelOrder(test);
+                break;
+
+            case "ctci1_1":
+                CTCI1_1 ctci = new CTCI1_1();
+                ctci.run();
+                break;
+
+            case "urlify":
+                Urlify u = new Urlify();
+                u.run();
+                break;
+
+            case "palindrome":
+                Palindrome p = new Palindrome();
+                p.run();
+                break;
+
+            case "morethanone":
+                MoreThanOneChange m = new MoreThanOneChange();
+                m.run();
+                break;
+
             case "list":
-                System.out.println("Available options: ");
-                availableProblems.forEach( o -> {
-                    System.out.println(o);
-                });
+               System.out.println("Available options: ");
+               availableProblems.forEach( o -> {
+                   System.out.println(o);
+               });
+               break;
+
+
 
             default:
                 System.out.println("supply a # or use \"list\" to get a list of all possible values.");
