@@ -15,6 +15,7 @@ public class MoreThanOneChange {
         tests.add(new TestCase("dog", "fuckface", false));
         tests.add(new TestCase("dog", "doggg", false));
         tests.add(new TestCase("dog", "ddoogs", false));
+        tests.add(new TestCase("pales", "elap", false));
 
         // Obviously True
         tests.add(new TestCase("dog","dog", true));

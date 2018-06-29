@@ -7,10 +7,10 @@ public class Main {
         System.out.println("Java based leetcode problems!");
         ArrayList<String> availableProblems = new ArrayList<>();
 
-        availableProblems.add("751");
+        availableProblems.add("751: CIDR Problem \"Easy\"");
 
         if(args.length < 1) {
-            System.out.println("Submit a test value please.");
+            System.out.println("Supply a # or use \"list\" to get a list of all possible values.");
             return;
         }
 

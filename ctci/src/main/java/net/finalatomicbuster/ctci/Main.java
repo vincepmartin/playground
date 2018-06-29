@@ -61,6 +61,11 @@ public class Main {
                 m.run();
                 break;
 
+            case "compress":
+                CompressString c = new CompressString();
+                c.run();
+                break;
+
             case "list":
                System.out.println("Available options: ");
                availableProblems.forEach( o -> {
