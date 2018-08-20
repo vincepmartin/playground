@@ -47,7 +47,7 @@ public class CompressString {
             System.out.println("*** " + result.toString());
         }
 
-        // Handle end
+        // Handle end.
         if(b != e) {
             result.append(original.charAt(b) + new Integer(e-b).toString());
         }

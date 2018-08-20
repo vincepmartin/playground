@@ -2,7 +2,6 @@ package net.finalatomicbuster.ctci;
 
 import net.finalatomicbuster.ctci.datastructures.TreeNode;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Main {
@@ -66,6 +65,11 @@ public class Main {
                 c.run();
                 break;
 
+            case "rotate":
+                ImageRotate90 r = new ImageRotate90();
+                r.run();
+                break;
+
             case "list":
                System.out.println("Available options: ");
                availableProblems.forEach( o -> {
@@ -73,7 +77,10 @@ public class Main {
                });
                break;
 
-
+            case "bomberman":
+                BomberMan bomberMan = new BomberMan();
+                bomberMan.run();
+                break;
 
             default:
                 System.out.println("supply a # or use \"list\" to get a list of all possible values.");
