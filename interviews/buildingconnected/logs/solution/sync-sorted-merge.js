@@ -8,8 +8,6 @@ module.exports = (logSources, printer) => {
 	let workingTree = new BinarySearchTree()
 	var activeLogSources = 0 // # of logSources not returning false.
 
-
-	// TODO: Come back to this... I think that the logSource !== false is not the way to apprroach this...
 	logSources.forEach( (logSource, index) => {
 		let currentLog = logSource.pop()
 		if(currentLog !== false) {
