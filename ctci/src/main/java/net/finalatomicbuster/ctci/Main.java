@@ -71,11 +71,9 @@ public class Main {
                 break;
 
             case "list":
-               System.out.println("Available options: ");
-               availableProblems.forEach( o -> {
-                   System.out.println(o);
-               });
-               break;
+                ListNodePlay l = new ListNodePlay();
+                l.run();
+                break;
 
             case "bomberman":
                 BomberMan bomberMan = new BomberMan();

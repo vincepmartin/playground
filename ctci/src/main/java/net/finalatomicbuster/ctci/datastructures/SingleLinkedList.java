@@ -2,23 +2,37 @@ package net.finalatomicbuster.ctci.datastructures;
 
 public class SingleLinkedList<T> {
     private ListNode head;
-    private ListNode current = head;
+    private ListNode last;
 
-
-    // Put a new item at the start of the LinkedList
+    // Put a new to the end of our LinkedList
     public void push(T val) {
-        if (head == null) {
-            head = new ListNode<T>(val);
+
+        // Is this our first node?
+        if(head == null) {
+            System.out.println("new");
+            head = new ListNode(val);
+            last = head;
         } else {
-            ListNode newNode = new ListNode(val);
-            newNode.next = head;
-            head = newNode;
+            System.out.println("not new");
+            last.next = new ListNode(val);
+            last = last.next;
         }
     }
 
-    // TODO: Implement
-    public void delete(T val) {
-        
+    public int delete(T val) {
+        // Find the node.
+        ListNode p = head;
+        int nodesDeleted = 0;
+
+        while(p.next != null) {
+            if(p.next.equals(val)) {
+                p.next = p.next.next;
+                nodesDeleted++;
+            }
+
+            p = p.next;
+        }
+        return nodesDeleted;
     }
 
     // TODO: Implement Find an item.
