@@ -9,19 +9,21 @@ public class SingleLinkedList<T> {
 
         // Is this our first node?
         if(head == null) {
-            System.out.println("new");
             head = new ListNode(val);
             last = head;
         } else {
-            System.out.println("not new");
             last.next = new ListNode(val);
             last = last.next;
         }
     }
 
     public int delete(T val) {
+        return delete(val, head);
+    }
+
+    public int delete(T val, ListNode node) {
         // Find the node.
-        ListNode p = head;
+        ListNode p = node;
         int nodesDeleted = 0;
 
         while(p.next != null) {
@@ -38,6 +40,34 @@ public class SingleLinkedList<T> {
     // TODO: Implement Find an item.
     public T find(T item) {
         return item;
+    }
+
+
+    /**
+     * Remove all duplicates from the linked list. (CTCI 2.1)
+     * @return
+     */
+    public int deleteDuplicates() {
+        ListNode p1 = head;
+        ListNode p2 = p1.next;
+        int nodesDeleted = 0;
+
+        while(p1.next != null) {
+
+            while(p2.next != null) {
+                if(p1.equals(p2.next.val)) {
+                    p2.next = p2.next.next;
+                }
+
+                if(p2.next != null)
+                    p2 = p2.next;
+            }
+
+            p1 = p1.next;
+            p2 = p1.next;
+        }
+
+        return nodesDeleted;
     }
 
     @Override
