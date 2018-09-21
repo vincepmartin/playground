@@ -6,7 +6,6 @@ public class SingleLinkedList<T> {
 
     // Put a new to the end of our LinkedList
     public void push(T val) {
-
         // Is this our first node?
         if(head == null) {
             head = new ListNode(val);
@@ -35,6 +34,36 @@ public class SingleLinkedList<T> {
             p = p.next;
         }
         return nodesDeleted;
+    }
+
+    public void deleteKthNode(int kth) {
+        ListNode p = head;
+        int last_node = length();
+
+        // Increment to the node
+        for(int current_node = 1; current_node < (last_node - kth) - 1 ; current_node++) {
+            System.out.println("Current node: " + current_node);
+            p = p.next;
+        }
+
+        // Delete the node.
+        p.next = p.next.next;
+    }
+
+    public int length() {
+        if(head == null) {
+            return 0;
+        }
+
+        ListNode p = head;
+        int totalCount = 1;
+
+        while(p.next != null) {
+            totalCount++;
+            p = p.next;
+        }
+
+        return totalCount;
     }
 
     // TODO: Implement Find an item.

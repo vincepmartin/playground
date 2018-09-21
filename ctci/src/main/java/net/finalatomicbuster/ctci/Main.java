@@ -80,6 +80,11 @@ public class Main {
                 bomberMan.run();
                 break;
 
+            case "convex":
+                ConvexPoly cp = new ConvexPoly();
+                cp.run();
+                break;
+
             default:
                 System.out.println("supply a # or use \"list\" to get a list of all possible values.");
         }
