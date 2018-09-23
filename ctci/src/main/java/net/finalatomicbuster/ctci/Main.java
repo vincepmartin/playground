@@ -92,6 +92,8 @@ public class Main {
 
             default:
                 System.out.println("supply a # or use \"list\" to get a list of all possible values.");
+
         }
     }
 }
+
