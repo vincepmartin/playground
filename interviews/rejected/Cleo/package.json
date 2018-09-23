@@ -1,0 +1,25 @@
+{
+  "name": "com.finalatomicbuster.net.cleo-challenge",
+  "version": "1.0.0",
+  "description": "Cleo coding challenge.",
+  "main": "solution.js",
+  "scripts": {
+    "test": "node solution.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startwithlucy/cleo-challenge.git"
+  },
+  "keywords": [
+    "interviews"
+  ],
+  "author": "Vincent Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/startwithlucy/cleo-challenge/issues"
+  },
+  "homepage": "https://github.com/startwithlucy/cleo-challenge#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
