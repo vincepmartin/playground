@@ -85,6 +85,11 @@ public class Main {
                 cp.run();
                 break;
 
+            case "fizzbuzz":
+                FizzBuzz fb = new FizzBuzz();
+                fb.run();
+                break;
+
             default:
                 System.out.println("supply a # or use \"list\" to get a list of all possible values.");
         }
