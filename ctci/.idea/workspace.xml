@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c1748d-a453-4cfa-bf37-11aa4b371ba7" name="Default Changelist" comment="Now pushes to the end of the singlelinkedlist and also deletes multiple nodes if needed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java" afterDir="false" />
+    <list default="true" id="07c1748d-a453-4cfa-bf37-11aa4b371ba7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ListNodePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ListNodePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/datastructures/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/datastructures/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/Cleo Coding Challenge" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/log-source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/log-source.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/printer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/printer.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/solution/async-sorted-merge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/solution/sync-sorted-merge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -40,6 +37,9 @@
         <task path="">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view />
       </state>
     </system>
@@ -48,10 +48,11 @@
     <session id="1739727878">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,15 +70,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="4" />
-          <entry key="java" value="11661" />
-          <entry key="txt" value="103" />
+          <entry key="java" value="11683" />
+          <entry key="txt" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="4" />
-          <entry key="JAVA" value="11661" />
-          <entry key="PLAIN_TEXT" value="103" />
+          <entry key="JAVA" value="11683" />
+          <entry key="PLAIN_TEXT" value="203" />
         </counts>
       </usages-collector>
     </session>
@@ -87,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="300">
               <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -99,12 +100,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#1791#1792#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/FizzBuzz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -112,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="778">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -491,8 +497,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ListNodePlay.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/datastructures/SingleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java" />
       </list>
     </option>
   </component>
@@ -502,9 +508,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="62" />
+    <option name="y" value="23" />
+    <option name="width" value="1574" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -512,6 +520,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -558,9 +569,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -568,7 +576,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537556801874" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537806104907" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -663,6 +671,7 @@
       <updated>1537240428370</updated>
       <workItem from="1537240429907" duration="15011000" />
       <workItem from="1537498629816" duration="4993000" />
+      <workItem from="1537745347374" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="Now pushes to the end of the singlelinkedlist and also deletes multiple nodes if needed.">
       <created>1537298446463</created>
@@ -671,18 +680,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537298446463</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Just read about how a lot of software engineers can't do fizzbuzz, so I did fizz buzz...">
+      <created>1537741785919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537741785919</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20004000" />
+    <option name="totallyTimeSpent" value="22059000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="62" y="23" width="1574" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63009405" visible="true" weight="0.21001221" />
-      <window_info id="Structure" order="1" sideWeight="0.36990595" side_tool="true" visible="true" weight="0.21001221" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6280702" visible="true" weight="0.22715405" />
+      <window_info id="Structure" order="1" sideWeight="0.37192982" side_tool="true" visible="true" weight="0.22715405" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -691,14 +707,14 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982457" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3489796" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49934727" weight="0.36830103" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3489796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32982457" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50065273" side_tool="true" weight="0.36830103" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32982457" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
@@ -755,7 +771,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Now pushes to the end of the singlelinkedlist and also deletes multiple nodes if needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now pushes to the end of the singlelinkedlist and also deletes multiple nodes if needed." />
+    <MESSAGE value="Just read about how a lot of software engineers can't do fizzbuzz, so I did fizz buzz..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Just read about how a lot of software engineers can't do fizzbuzz, so I did fizz buzz..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="300">
           <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -819,19 +836,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        <state relative-caret-position="778">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/FizzBuzz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
