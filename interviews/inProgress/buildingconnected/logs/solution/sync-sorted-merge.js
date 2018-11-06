@@ -16,23 +16,27 @@ module.exports = (logSources, printer) => {
 		}
 	})
 
+	// Runtime: ? activeLogSources will drop over time... O(activeLogSources)?
 	// We have an initial sorted array, now lets keep processing.
 	while(activeLogSources > 0) {
 		var loggersToPoll = []
 
 		// Print out the oldest logs found in the tree.
-		var oldestLogs = workingTree.search(workingTree.getMinKey())
+		var oldestLogs = workingTree.search(workingTree.getMinKey()) // Runtime: O(logn)
 
-		oldestLogs.forEach( (logContainer, index) => {
+		// Runtime: O(oldestLogs * logn)
+		oldestLogs.forEach( (logContainer) => {
 			printer.print(logContainer.log)
 			loggersToPoll.push(logContainer.sourceIndex)
 		})
 
+		// Runtime: O(logn)
 		// Delete the logs that were printed.
 		oldestLogs.forEach( logContainer => {
 			workingTree.delete(logContainer.log.date.getTime()) 
 		})	
 
+		// Runtime: O( loggersToPoll * log(n))
 		// Pop new logs off of the sources that were just used into our BST and then update the activeLogSources count as needed.
 		loggersToPoll.forEach( logSourceIndex => {
 			let log = logSources[logSourceIndex].pop()

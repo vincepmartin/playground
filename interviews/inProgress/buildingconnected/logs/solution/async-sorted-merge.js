@@ -11,8 +11,11 @@ module.exports = (logSources, printer) => {
 	// Take latest logs from all of our logSources.
 	function popLogSources() {
 		logSourcePromises = []
+		// TODO: Could use a .map to condense this code.	
 		logSources.forEach(logSource => {logSourcePromises.push(logSource.popAsync().then(_ => processLog(_)))})
 
+		// TODO talking point: This should be throttled to handle maximum concurrent process or something.
+		// At most resrolve k of these things, then do the next k. CHUNK UP THE LOGS into seperate promises...
 		Promise.all(logSourcePromises).then(() => {
 			// Printing 0 log sources means we are done.	
 			if(printOldestLogs() === 0) {

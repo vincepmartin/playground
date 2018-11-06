@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07c1748d-a453-4cfa-bf37-11aa4b371ba7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/Cleo Coding Challenge" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/log-source.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/log-source.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/printer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/lib/printer.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/solution/async-sorted-merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../interviews/buildingconnected/logs/solution/sync-sorted-merge.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/solution/async-sorted-merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/solution/async-sorted-merge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/solution/sync-sorted-merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/../interviews/inProgress/buildingconnected/logs/solution/sync-sorted-merge.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -48,7 +38,7 @@
     <session id="1739727878">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.9" value="1" />
@@ -70,14 +60,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="4" />
-          <entry key="java" value="11683" />
+          <entry key="java" value="11738" />
           <entry key="txt" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="4" />
-          <entry key="JAVA" value="11683" />
+          <entry key="JAVA" value="11738" />
           <entry key="PLAIN_TEXT" value="203" />
         </counts>
       </usages-collector>
@@ -100,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="371">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -508,11 +498,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="23" />
-    <option name="width" value="1574" />
-    <option name="height" value="947" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -576,7 +564,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537806104907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538782814625" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -671,7 +659,7 @@
       <updated>1537240428370</updated>
       <workItem from="1537240429907" duration="15011000" />
       <workItem from="1537498629816" duration="4993000" />
-      <workItem from="1537745347374" duration="1555000" />
+      <workItem from="1537745347374" duration="2661000" />
     </task>
     <task id="LOCAL-00001" summary="Now pushes to the end of the singlelinkedlist and also deletes multiple nodes if needed.">
       <created>1537298446463</created>
@@ -691,14 +679,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22059000" />
+    <option name="totallyTimeSpent" value="23165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1574" height="947" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6280702" visible="true" weight="0.22715405" />
-      <window_info id="Structure" order="1" sideWeight="0.37192982" side_tool="true" visible="true" weight="0.22715405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62857145" visible="true" weight="0.21245421" />
+      <window_info id="Structure" order="1" sideWeight="0.37142858" side_tool="true" visible="true" weight="0.21245421" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -850,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/finalatomicbuster/ctci/ConvexPoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="371">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
         </state>
       </provider>
     </entry>
