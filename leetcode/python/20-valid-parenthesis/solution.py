@@ -5,11 +5,11 @@ class Solution:
 
         if s == "":
             return True
-        
+
         # Quick checks, if we have an odd # then we know for sure that it is not valid.
         if len(s)%2 != 0:
             return False
-        
+
         if s[0] == ')' or s[0] == ']' or s[0] == '}':
             return False
 
@@ -24,9 +24,9 @@ class Solution:
                     temp = tempList.pop()
                 if parens[temp] != c:
                     tempList.append(temp)
-        
+
         if len(tempList) == 0:
             return True
 
-        else: 
+        else:
             return False
