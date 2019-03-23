@@ -14,7 +14,6 @@ class Solution(object):
         while p != None:
             length = length + 1 
             p = p.next
-        print("Length is ", length)
         return length
 
     def getIntersectionNode(self, headA, headB):
@@ -30,23 +29,24 @@ class Solution(object):
         lHead = None
         s = None
 
-        m = []
+        # Match details.
+        m = None
+        mCount = 0
 
         if self.lengthOfList(headA) < self.lengthOfList(headB):
-            print("A is shorter")
             s = headA
             l = headB
             lHead = headB
             
         else:
-            print("B is shorter")
             s = headB
             l = headA
             lHead = headA
         
         while s != None:
             if s.val != l.val:
-                m = []
+                m = None
+                mCount = 0
                 if l.next != None:
                     l = l.next
                 else:
@@ -54,8 +54,10 @@ class Solution(object):
                     s = s.next
 
             elif s.val == l.val:
-                gc.collect()
-                m.append(s)
+                if mCount == 0:
+                    m = s
+                mCount += 1
+
                 s = s.next
 
                 if l.next != None:
@@ -66,7 +68,7 @@ class Solution(object):
         if not m:
             return None
         else:
-            return m[0]         
+            return m
 
 
 s = Solution()
@@ -84,7 +86,7 @@ testb1.next.next = ListNode(1)
 testb1.next.next.next = ListNode(8)
 testb1.next.next.next.next = ListNode(4)
 testb1.next.next.next.next.next = ListNode(5)
-print(s.getIntersectionNode(testb1, testa1))
+print(s.getIntersectionNode(testb1, testa1).val)
 
 testa2 = ListNode(2)
 testa2.next = ListNode(6)
