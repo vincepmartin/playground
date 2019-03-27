@@ -59,6 +59,9 @@ class Solution(object):
 
         # find center and reset p2 pointer.
         midpoint = int(math.floor(tail/2))
+        mv = 0  
+        if tail%2 == 0:
+            mv = 1
         p1 = head
 
         for i in range(0, midpoint):

@@ -86,7 +86,7 @@ testb1.next.next = ListNode(1)
 testb1.next.next.next = ListNode(8)
 testb1.next.next.next.next = ListNode(4)
 testb1.next.next.next.next.next = ListNode(5)
-print(s.getIntersectionNode(testb1, testa1).val)
+print(s.getIntersectionNode(testa1, testb1).val)
 
 testa2 = ListNode(2)
 testa2.next = ListNode(6)
