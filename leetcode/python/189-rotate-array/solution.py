@@ -29,20 +29,14 @@ class Solution(object):
         else:
             shiftFix = 1
 
-        for i in range(0, len(nums) + k + 1):
+        for i in range(0, len(nums) + k):
             self.swapValues(nums, i%len(nums), (i+(k-shiftFix))%len(nums))
 
 t1 = [1,2,3,4,5,6,7]
-k1 = 5 
-
-t2 = [-1,-100,3,99] 
-k2 = 3
-
+k1 = 10
 s = Solution()
-s.rotate(t1, k1)
-print t1
 
-print("****")
-s = Solution()
-s.rotate(t2, k2)
-print t2
+for i in range(0, k1):
+    t2 = list(t1) #Reset t2 every time.
+    s.rotate(t2, i)
+    print(t2, " : ", i)
