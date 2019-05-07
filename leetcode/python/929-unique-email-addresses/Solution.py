@@ -10,7 +10,6 @@ class Solution(object):
 
         for email in emails:
             eTemp = self.parseEmail(email)
-            print(eTemp)
             if eTemp in emailDict:
                 emailDict[eTemp] = True
             else:
