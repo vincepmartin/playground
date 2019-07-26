@@ -11,7 +11,7 @@ class LinkedList(object):
         self.head = ListNode(x)
         self.tail = self.head
         self.previous = None
-        self.current = self.head
+        self.p = self.head
         self.length = 0
 
     def append(self, x):
@@ -25,15 +25,15 @@ class LinkedList(object):
         self.head = newHead
         self.length += 1
 
-    def currentNode(self):
-        return self.current
+    def current(self):
+        return self.p
 
     def next(self):
-        self.previous = self.current 
-        self.current = self.current.next
+        self.previous = self.p
+        self.p = self.p.next
 
     def hasNext(self):
-        if self.current.next != None:
+        if self.p.next != None:
             return True
         else:
              return False
@@ -41,12 +41,12 @@ class LinkedList(object):
     def delete(self):
         # Regular delete.
         if self.hasNext():
-            self.current.val = self.current.next.val
-            self.current.next = self.current.next.next
+            self.p.val = self.p.next.val
+            self.p.next = self.p.next.next
         # Special case for end.
         else:
-            self.current = self.previous
-            self.current.next = None
+            self.p = self.previous
+            self.p.next = None
 
         self.length -= 1
 
@@ -74,16 +74,15 @@ class Solution:
         if ll.length <= 1:
             return 
 
-        while ll.currentNode() != None:
-            if ll.currentNode().val < x:
+        while ll.current() != None:
+            if ll.current().val < x:
                 self.moveCurrentNodeToHead(ll)
             
             else:
                 ll.next()
         
     def moveCurrentNodeToHead(self, ll):
-        #print("Attempting to move", ll.currentNode().val)
-        current = ll.currentNode().val
+        current = ll.current().val
         ll.delete()
         ll.prepend(current)
 
