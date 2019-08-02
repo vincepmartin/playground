@@ -7,6 +7,9 @@ aabcccccaaa becomes a2b1c5a3
 
 If the compressed version of the string is in reality longer than the non compressed version just return
 the non compressed version!
+
+Summary:
+I think this is O(N) in terms of space and is O(1) in terms of the storage being used.
 ''' 
 
 class Solution:
