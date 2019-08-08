@@ -30,7 +30,7 @@ s = Solution()
 '''
 Compare:
 a -> b -> c -> d -> e -> f
-          c -> d -> e -> f
+1 -> 2 -> 3 -> c -> d -> e -> f
 '''
 
 t1 = ListNode("a")
@@ -42,12 +42,6 @@ t1.next.next.next.next.next = ListNode("f")
 
 t2 = ListNode(1)
 t2.next = ListNode(2)
-t2.next.next = ListNode(3)
-t2.next.next.next = ListNode(4)
-t2.next.next.next.next = ListNode(5)
-t2.next.next.next.next.next = ListNode(6)
-t2.next.next.next.next.next.next = ListNode(7)
-t2.next.next.next.next.next.next.next = t1.next.next.next.next.next
 print("Intersects at:", s.intersectingList(t1, t2).val)
 
 
