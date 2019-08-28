@@ -17,7 +17,7 @@ class Graph(object):
     def insert_node(self, new_node_val):
         new_node = Node(new_node_val)
         self.nodes.append(new_node)
-        
+
     def insert_edge(self, new_edge_val, node_from_val, node_to_val):
         from_found = None
         to_found = None
@@ -61,7 +61,7 @@ class Graph(object):
                 aList[e.node_from.value].append((e.node_to.value, e.value))
 
         return aList
-    
+
     def get_adjacency_matrix(self):
         """Return a matrix, or 2D list.
         Row numbers represent from nodes,
@@ -88,10 +88,10 @@ graph.insert_edge(103, 3, 4)
 # Should be [(100, 1, 2), (101, 1, 3), (102, 1, 4), (103, 3, 4)]
 print graph.get_edge_list()
 
-# Should be [None, 
-# [(2, 100), (3, 101), (4, 102)], 
-# None, 
-# [(4, 103)], 
+# Should be [None,
+# [(2, 100), (3, 101), (4, 102)],
+# None,
+# [(4, 103)],
 # None]
 print graph.get_adjacency_list()
 

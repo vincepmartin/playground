@@ -30,7 +30,6 @@ class BinaryTree(object):
                 fixedValue += '-'
 
         return fixedValue
-                        
 
     def preorder_search(self, start, find_val):
         """Helper method - use this to create a 
