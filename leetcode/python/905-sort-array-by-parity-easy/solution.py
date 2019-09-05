@@ -5,6 +5,7 @@ class Solution:
         odds = []
         evens = []
 
+	#O(N)
         for i in A:
             if i%2 == 0:
                 evens.append(i)
