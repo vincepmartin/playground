@@ -19,7 +19,6 @@ uniqueFlavors.add(flavor1)
 uniqueFlavors.add(flavor2)
 console.log(uniqueFlavors)
 
-flavor1.flavor = 'nachos'
 console.log('Add flavor1 again')
 uniqueFlavors.add(flavor1)
 console.log(uniqueFlavors)
