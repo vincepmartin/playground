@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/startwithlucy/cleo-challenge#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^29.3.1"
   }
 }
